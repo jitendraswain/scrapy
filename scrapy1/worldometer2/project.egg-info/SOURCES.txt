@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+worldometer2/__init__.py
+worldometer2/items.py
+worldometer2/middlewares.py
+worldometer2/pipelines.py
+worldometer2/settings.py
+worldometer2/spiders/__init__.py
+worldometer2/spiders/coranavirus.py

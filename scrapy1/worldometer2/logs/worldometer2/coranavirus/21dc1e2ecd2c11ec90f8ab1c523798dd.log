@@ -1,0 +1,312 @@
+2022-05-06 11:03:21 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: worldometer2)
+2022-05-06 11:03:21 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.8.10 (default, Mar 15 2022, 12:22:08) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 3.0.2 15 Mar 2022), cryptography 37.0.0, Platform Linux-5.13.0-40-generic-x86_64-with-glibc2.29
+2022-05-06 11:03:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'worldometer2',
+ 'LOG_FILE': 'logs/worldometer2/coranavirus/21dc1e2ecd2c11ec90f8ab1c523798dd.log',
+ 'NEWSPIDER_MODULE': 'worldometer2.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['worldometer2.spiders']}
+2022-05-06 11:03:21 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-05-06 11:03:21 [scrapy.extensions.telnet] INFO: Telnet Password: 42e2931dd7ea22bc
+2022-05-06 11:03:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-05-06 11:03:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-05-06 11:03:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'worldometer2.middlewares.Worldometer2SpiderMiddleware']
+2022-05-06 11:03:21 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-05-06 11:03:21 [scrapy.core.engine] INFO: Spider opened
+2022-05-06 11:03:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-05-06 11:03:22 [coranavirus] INFO: Spider opened: coranavirus
+2022-05-06 11:03:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-05-06 11:03:22 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.worldometers.info/robots.txt> (referer: None)
+2022-05-06 11:03:22 [protego] DEBUG: Rule at line 2 without any user agent to enforce it on.
+2022-05-06 11:03:22 [protego] DEBUG: Rule at line 10 without any user agent to enforce it on.
+2022-05-06 11:03:22 [protego] DEBUG: Rule at line 12 without any user agent to enforce it on.
+2022-05-06 11:03:22 [protego] DEBUG: Rule at line 14 without any user agent to enforce it on.
+2022-05-06 11:03:22 [protego] DEBUG: Rule at line 16 without any user agent to enforce it on.
+2022-05-06 11:03:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.worldometers.info/coronavirus/> from <GET https://www.worldometers.info/coronavirus>
+2022-05-06 11:03:24 [filelock] DEBUG: Attempting to acquire lock 140692453797168 on /home/yash/.cache/python-tldextract/3.8.10.final__my-project-env__38e5fa__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-06 11:03:24 [filelock] DEBUG: Lock 140692453797168 acquired on /home/yash/.cache/python-tldextract/3.8.10.final__my-project-env__38e5fa__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-06 11:03:24 [filelock] DEBUG: Attempting to release lock 140692453797168 on /home/yash/.cache/python-tldextract/3.8.10.final__my-project-env__38e5fa__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-06 11:03:24 [filelock] DEBUG: Lock 140692453797168 released on /home/yash/.cache/python-tldextract/3.8.10.final__my-project-env__38e5fa__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-06 11:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/> (referer: None)
+2022-05-06 11:03:24 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.worldometers.info/coronavirus/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2022-05-06 11:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/us/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/ukraine/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/malaysia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/australia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/colombia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/iran/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/japan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mexico/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/netherlands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/thailand/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/poland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/spain/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/china/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/viet-nam/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/argentina/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-helena/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/nauru/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/turkey/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/micronesia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/niue/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/marshall-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/western-sahara/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/holy-see/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/indonesia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/china-macao-sar/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/falkland-islands-malvinas/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/montserrat/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/wallis-and-futuna-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-pierre-and-miquelon/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/anguilla/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/palau/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/kiribati/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-barthelemy/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cook-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-kitts-and-nevis/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/chad/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/sao-tome-and-principe/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/turks-and-caicos-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/british-virgin-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-vincent-and-the-grenadines/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/liberia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/antigua-and-barbuda/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/sierra-leone/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/comoros/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/vanuatu/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/niger/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/caribbean-netherlands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/eritrea/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/guinea-bissau/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/sint-maarten/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/samoa/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/tonga/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-martin/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/yemen/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/monaco/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/greenland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/gambia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/dominica/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bermuda/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/central-african-republic/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/solomon-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/grenada/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/equatorial-guinea/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/djibouti/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/san-marino/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/liechtenstein/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/tajikistan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/south-sudan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/congo/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/nicaragua/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/gibraltar/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/burkina-faso/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cayman-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/timor-leste/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saint-lucia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/somalia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/benin/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/isle-of-man/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/lesotho/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/haiti/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mali/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bahamas/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/tanzania/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/faeroe-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/aruba/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/guinea/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/togo/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mauritius/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/burundi/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mayotte/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/andorra/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/curacao/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/seychelles/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/gabon/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/papua-new-guinea/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/syria/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cabo-verde/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/belize/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mauritania/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bhutan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/new-caledonia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/sudan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/guyana/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/fiji/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/madagascar/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/swaziland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/french-polynesia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/barbados/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/channel-islands/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/suriname/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/french-guiana/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cote-d-ivoire/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/malawi/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/senegal/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/democratic-republic-of-the-congo/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/malta/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/angola/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cameroon/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/rwanda/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/guadeloupe/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/jamaica/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cambodia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/brunei-darussalam/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/trinidad-and-tobago/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/namibia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/martinique/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/el-salvador/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/ghana/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/uganda/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/afghanistan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/maldives/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/iceland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/kyrgyzstan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/luxembourg/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/montenegro/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mozambique/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/laos/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/uzbekistan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/zimbabwe/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/nigeria/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/taiwan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/algeria/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/botswana/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/albania/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/zambia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/macedonia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/kenya/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/qatar/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/reunion/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bosnia-and-herzegovina/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/oman/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/armenia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/honduras/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/mongolia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cyprus/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/ethiopia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/libya/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/egypt/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/moldova/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/venezuela/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bahrain/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/estonia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/state-of-palestine/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/dominican-republic/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/myanmar/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/kuwait/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/sri-lanka/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/paraguay/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/saudi-arabia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/latvia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/azerbaijan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/costa-rica/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/guatemala/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/panama/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/ecuador/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/united-arab-emirates/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/uruguay/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bolivia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/new-zealand/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/nepal/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/slovenia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/belarus/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/tunisia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/finland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/croatia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/cuba/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/lebanon/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/lithuania/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bulgaria/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/china-hong-kong-sar/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/morocco/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/singapore/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/kazakhstan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/norway/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/ireland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/pakistan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/georgia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/jordan/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/hungary/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/slovakia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/bangladesh/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/serbia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/iraq/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/sweden/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/romania/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/denmark/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/greece/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/canada/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/chile/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/switzerland/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/south-africa/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/peru/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/philippines/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/portugal/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/czech-republic/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/belgium/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/uk/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/south-korea/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/italy/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/russia/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/austria/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/israel/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/germany/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/india/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/brazil/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.worldometers.info/coronavirus/country/france/> (referer: https://www.worldometers.info/coronavirus/)
+2022-05-06 11:03:39 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-05-06 11:03:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 93103,
+ 'downloader/request_count': 230,
+ 'downloader/request_method_count/GET': 230,
+ 'downloader/response_bytes': 5928398,
+ 'downloader/response_count': 230,
+ 'downloader/response_status_count/200': 228,
+ 'downloader/response_status_count/301': 1,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 17.478597,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 5, 6, 11, 3, 39, 553603),
+ 'httpcompression/response_bytes': 45753022,
+ 'httpcompression/response_count': 229,
+ 'log_count/DEBUG': 241,
+ 'log_count/INFO': 11,
+ 'memusage/max': 76881920,
+ 'memusage/startup': 76881920,
+ 'request_depth_max': 1,
+ 'response_received_count': 229,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 229,
+ 'scheduler/dequeued/memory': 229,
+ 'scheduler/enqueued': 229,
+ 'scheduler/enqueued/memory': 229,
+ 'start_time': datetime.datetime(2022, 5, 6, 11, 3, 22, 75006)}
+2022-05-06 11:03:39 [scrapy.core.engine] INFO: Spider closed (finished)
